@@ -41,7 +41,7 @@ CUPSSERVERROOT = $(shell $(CUPSCONFIG) --serverroot)
 
 
 all: 
-	$(CC) $(CFLAGS) $(CPPFLAGS) -DBINDIR='"$(GSBINDIR)"' -DCUPSDATA='"$(CUPSDATA)"' -o cups/gstoraster cups/gstoraster.c cups/colord.c $(LDFLAGS)
+	$(CC) $(CFLAGS) $(CPPFLAGS) $(LDFLAGS) -DBINDIR='"$(GSBINDIR)"' -DCUPSDATA='"$(CUPSDATA)"' -o cups/gstoraster cups/gstoraster.c cups/colord.c
 
 install: 
 	$(INSTALL_PROGRAM) cups/gstopxl cups/gstoraster $(DESTDIR)$(CUPSSERVERBIN)/filter
