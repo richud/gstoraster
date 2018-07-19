@@ -1,8 +1,11 @@
 gstoraster was removed from ghostscript after 9.07 and put into cups-filters.
 
-cups-filters as a ton of dependencies and all I needed was gstoraster in order to print with cups.
+cups-filters as a ton of dependencies and all I needed was gstoraster in order to print to a DYMO LabelWriter 450.
 
-This is simply the removed files that can be compiled and used with cups and ghostscript (gstoraster is esentially a wrapper for ghostscript)
+Update : This is pulled from cups-filters 1.20.4 and works with cups 2.x
+
+
+This is simply the removed files that can be compiled and used with cups and ghostscript (gstoraster is partly a wrapper for ghostscript)
 
 I imagine this is mostly of use to people making embedded/minimal systems and will be cross compiling.
 
